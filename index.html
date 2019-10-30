@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1>Train Schedule Editor</h1>
+            <h2>Get on board</h2>
+        </header>
+
+        <div id="table-div">
+            <h5>Scheduled Trains</h5>
+            <table id="table">
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Frequency (min)</th>
+                  <th>Next Arrival</th>
+                  <th>Minutes til Arrival</th>
+                </tr>
+                <tr id="firstrow">
+                  <td>Biden Express</td>
+                  <td>Wilmington, DE</td>
+                  <td>120</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+        </div>
+        <div id="add-employees">
+                <h5>Add Train:</h5>
+            <form id="table-form">
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input"><br>
+                <label for="role-input">Destination:</label>
+                <input type="text" id="role-input"><br>
+                <label for="date-input">First Train Time:</label>
+                <input type="text" id="date-input"><br>
+                <label for="monthly-input">Frequency (min):</label>
+                <input type="text" id="monthly-input"><br>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
