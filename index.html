@@ -32,6 +32,7 @@
                 <tr>
                   <th>Train Name</th>
                   <th>Destination</th>
+                  <th>First Train Time</th>
                   <th>Frequency (min)</th>
                   <th>Next Arrival</th>
                   <th>Minutes til Arrival</th>
@@ -39,28 +40,41 @@
                 <tr id="firstrow">
                   <td>Biden Express</td>
                   <td>Wilmington, DE</td>
+                  <td>8:00 AM</td>
                   <td>120</td>
-                  <td></td>
-                  <td></td>
+                  <td>Eventually</td>
+                  <td>Idk</td>
                 </tr>
               </table>
         </div>
         <div id="add-employees">
-                <h5>Add Train:</h5>
+                <h5>Add Train</h5>
             <form id="table-form">
                 <label for="name-input">Name:</label>
                 <input type="text" id="name-input"><br>
                 <label for="role-input">Destination:</label>
-                <input type="text" id="role-input"><br>
+                <input type="text" id="dest-input"><br>
                 <label for="date-input">First Train Time:</label>
-                <input type="text" id="date-input"><br>
+                    <div id="mayday">
+                        <p id="imp">IMPORTANT</p>
+                        <p class="imp-p">Entry format example:</p>
+                        <p class="imp-p">08:26 pm / 08:26 am</p>
+                    </div>
+                <input type="text" id="ft-input"><br>
                 <label for="monthly-input">Frequency (min):</label>
-                <input type="text" id="monthly-input"><br>
-
+                <input type="text" id="freq-input"><br>
+        
                 <input id="submit" type="submit" value="Submit">
             </form>
+            <div id="calc">
+                Hours: <input type="number" id="hours">
+                Min: <input type="number" id="min" readonly>
+                <button id="doMath">Calc</button>
+            </div>
+            
         </div>
-        
-        <script src="app.js" async defer></script>
+
+    
+        <script src="assets/javascript/app.js" async defer></script>
     </body>
 </html>
